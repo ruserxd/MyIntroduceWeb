@@ -7,9 +7,9 @@ body {
 
 img {
     width: 15vw; /* 設置圖像寬度為15視窗 */
-    height: auto; /* 高度自動 */
-    border-radius: 90%; /* 圖像為圓型 */
+    height: 15vw; /* 高度自動 */
 }
+
 #probabilityForm {
     margin: 0 auto; /* 將表單水平居中 */
     width: 50vw; /* 表單的寬度為視窗寬度50% */
@@ -25,6 +25,7 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 1vw;
     background-color: #6C464E;
     padding: 3vw;
     text-align: center;
