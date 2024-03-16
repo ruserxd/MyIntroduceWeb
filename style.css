@@ -2,16 +2,9 @@
 body {
     background: #F1FFE7;
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 1.5vw;
 }
-.container {
-    margin: 1.5vw 20vw;
-    padding: 2vw;
-    border: 0.3vw solid #A9FDAC;
-    background: #44CF6C;
-    color: black;
-    font-size: 1.2em;
-}
+
 img {
     width: 15vw; /* 設置圖像寬度為15視窗 */
     height: auto; /* 高度自動 */
@@ -36,4 +29,39 @@ img {
     padding: 30px;
     text-align: center;
     font-size: 1.2em;
+}
+.container {
+    margin: 1.5vw 20vw;
+    padding: 2vw;
+    border: 0.3vw solid #A9FDAC;
+    background: #44CF6C;
+    color: black;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 15px; /* 在小屏幕上使用较小的字体大小 */
+    }
+    .container, .res, .footer {
+        font-size: 1em; /* 在小屏幕上使用标准的字体大小 */
+    }
+    #probabilityForm input[type="number"] {
+        width: 80%;
+    }
+    img {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        font-size: 16px; /* 在大屏幕上使用较大的字体大小 */
+    }
+    .container, .res, .footer {
+        font-size: 1.2em; /* 在大屏幕上使用稍大的字体大小 */
+    }
+    #probabilityForm input[type="number"] {
+        width: 50%;
+    }
 }
