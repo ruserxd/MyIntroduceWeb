@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body {
+    background: #F1FFE7;
+    text-align: center;
+    font-size: 0.8vw;
+}
+.container {
+    margin: 1.5vw 20vw;
+    padding: 2vw;
+    border: 0.3vw solid #A9FDAC;
+    background: #44CF6C;
+    color: black;
+    font-size: 1.2em;
+}
+img {
+    width: 15vw; /* 設置圖像寬度為15視窗 */
+    height: auto; /* 高度自動 */
+    border-radius: 90%; /* 圖像為圓型 */
+}
+#probabilityForm {
+    margin: 0 auto; /* 將表單水平居中 */
+    width: 50vw; /* 表單的寬度為視窗寬度50% */
+    text-align: center; /* 将表單内部内容居中 */
+    font-size: 1em;
+}
+.res {
+    text-align: center;
+    font-size: 1.2em;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6C464E;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
