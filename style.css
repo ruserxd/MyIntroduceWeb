@@ -13,23 +13,17 @@ img {
 #probabilityForm {
     margin: 0 auto; /* 將表單水平居中 */
     width: 50vw; /* 表單的寬度為視窗寬度50% */
-    text-align: center; /* 将表單内部内容居中 */
     font-size: 1em;
 }
-.res {
-    text-align: center;
-    font-size: 1.2em;
-}
+
 .footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 5vw;
+    height: 1vw;
     background-color: #6C464E;
-    padding: 5vw;
-    text-align: center;
-    font-size: 1.2em;
+    padding: 1vw;
 }
 .container {
     margin: 1.5vw 20vw;
@@ -37,9 +31,10 @@ img {
     border: 0.3vw solid #A9FDAC;
     background: #44CF6C;
     color: black;
+}
+.res,.footer,.container {
     font-size: 1.2em;
 }
-
 @media screen and (max-width: 768px) {
     body {
         font-size: 15px; /* 在小屏幕上使用较小的字体大小 */
@@ -53,6 +48,10 @@ img {
     img {
         width: 50vw;
     }
+    .footer {
+        height: 5vw;
+        padding: 5vw;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -64,5 +63,9 @@ img {
     }
     #probabilityForm input[type="number"] {
         width: 50%;
+    }
+    .footer {
+        height: 1vw;
+        padding: 1vw;
     }
 }
