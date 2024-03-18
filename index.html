@@ -11,33 +11,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <header>
         <h1>KUNWEIWU Web</h1>
-        <section id="myINFO">
-            <h2>關於本網站</h2>
-            <nav>
-                <ul>
-                    <li>關於本站</li>
-                    <li>我的朋友</li>
-                    <li>個人介紹</li>
-                </ul>
-            </nav>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href ="#intro">關於本站</a></li>
+            <li><a href="#myFriend">我的朋友</a></li>
+            <li><a href="#profile">版主介紹</a></li>
+        </ul>
+    </nav>
+    <main id ="contents">
+        <section id="intro">
+            <h2 class = "h">關於本網站</h2>
             <p>
                 歡迎光臨。
                 這裡是介紹我自己。<br>
                 <strong>未經許可勿擅自轉載</strong><!--強調語法-->
             </p>
         </section>
-        <section>
-            <h2>我的朋友</h2>
-            <h3>77</h3>
+        <section id ="myFriend">
+            <h2 class = "h">我的朋友</h2>
+            <h3 class = "h-sub">77 <span> (吉娃娃 • ♂️)</span></h3>
+            <img src="imgs/gidog.jpg" alt="pic77"></img>
+            <p>不僅長得又帥又幽默的友人<br>交了女朋友後有點走鐘</p>
+            <p class="more"><a href="friends/dog77.html">->更多介紹</a></p>
         </section>
-        <section>
-            <h2>版主介紹</h2>
-            <img src="imgs/MyPhoto.JPG" width="480" height="400" alt="myPic">
+        <section id="profile">
+            <h2 class = "h">版主介紹</h2>
+            <img src="imgs/MyPhoto.JPG" alt="myPic">
             <dl>
                 <dt>暱稱：</dt><dd>WEI</dd>
-                <dt>職業：</dt><dd>IECS_學生</dd>
+                <dt>職業：</dt><dd>FCU_IECS_學生</dd>
                 <dt>mail:</dt><dd><a href="mailto:info_WEI@o365.fcu.edu.tw">info_WEI@o365.fcu.edu.tw</a></dd>
                 <dt>WEB:</dt><dd><a href="https://ruserxd.github.io/probabilityForCouple/" target="_blank">
                 https://ruserxd.github.io/probabilityForCouple/</a></dd>

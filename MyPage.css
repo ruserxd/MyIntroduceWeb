@@ -2,6 +2,13 @@
 body {
     background-color: #fbf9cc;
 }
+#contents {
+    width: 798px;
+    margin: 40px auto;
+    padding:40px 80px;
+    border: 1px solid #f6bb9e;
+    background-color: #fff;
+}
 h1 {
     width: 400px;
     /*margin 第一個控制上下、第二個控制左右*/
@@ -22,9 +29,67 @@ h1 {
 
     font-family: 'Limelight', cursive;
 }
-p img{
-
+h2 {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted #94c8b1;
+    border-left: 10px solid #d0e35b;
+    color: #6fbb9a;
 }
-.mypic {
-    background-position: top left;
+.more {
+    text-align: right;
 }
+.more::after {
+    content: url("imgs/youtube.png");
+    margin-left: 3px;
+    vertical-align: middle;
+}
+.h {
+    padding: 10px;
+    margin-bottom: 30px;
+    border:1px dotted #94c8b1;
+    border-left: 10px solid #d0e35b;
+    color: #6fbb9a;
+}
+.h-sub {
+    padding: 10px;
+    background-color: #fbf9cc;
+    color: #ff705b;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ffd0ad inset;
+}
+a {
+    color: #df4839;
+}
+a:hover {
+    color: #ff705b;
+    text-decoration: none;
+}
+#contents > section + section {
+    margin-top: 80px;
+}
+#profile img {
+    max-width: 100%; /* 父元素的最大寬度 */
+    height: 20vw; /* 自動計算高度，以保持圖片比例 */
+}
+h1,nav,footer {
+    text-align: center;
+}
+.menu li {
+    list-style-type: none;
+    /*border: 1px solid #f00;*/
+    display: inline-block;
+    width: 180px;
+    margin: 0 10px;
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    background: #6fbb9a;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+.mean a:hover {
+    background: #90ddbb;
+ }
