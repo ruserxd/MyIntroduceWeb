@@ -1,6 +1,11 @@
 @charset "UTF-8";
 body {
     background-color: #fbf9cc;
+    background-image: url("imgs/topbkg.jpeg");
+    background-repeat: repeat-x;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 1024px 200px;
 }
 #contents {
     width: 798px;
