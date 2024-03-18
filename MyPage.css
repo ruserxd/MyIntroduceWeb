@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body {
+    background-color: #fbf9cc;
+}
+h1 {
+    width: 400px;
+    /*margin 第一個控制上下、第二個控制左右*/
+    margin: 40px auto;
+    padding: 40px;
+    border: 5px solid #95dbbd;
+    background-color: #6fbb9a;
+    color: #fff;
+    font-size: 300%;
+    text-align: center;
+    line-height: 1;
+
+    border-radius: 50%;/*變圓形*/
+    text-shadow: 1px 1px 5px #307657;/*立體文字的效果*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);/*用陰影做出立體邊框*/
+
+    background-image: linear-gradient(to bottom, #6fbb9a, #4a9d79);/*logo底色改為漸層*/
+
+    font-family: 'Limelight', cursive;
+}
+p img{
+
+}
+.mypic {
+    background-position: top left;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="單身狗專用計算機">
+    <meta name="description" content="計算出現情侶的機率是多少">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=IBM+Plex+Sans+JP&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>街邊最好都是情侶!!!</title>
+    <link href="style.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <div class="container">
+        <h1>街邊最好都是情侶!!!</h1>
+        <h2>這個網站是負責讓我們這些單身狗執行的</h2>
+        <h3>製作的動機</h3>
+        <p>
+            打籃球經過的大多是情侶，有鑑於此結合上課所學
+            Web、機率與統計學而製成
+        </p>
+        <img src="imgs/dog.jpeg" alt="dog">
+        <form id="probabilityForm">
+            <label for="couples">看見的情侶(幾對):</label>
+            <input type="number" id="couples" name="couples" min="0" required><br><br>
+
+            <label for="singleMen">看見的單身男子:</label>
+            <input type="number" id="singleMen" name="singleMen" min="0" required><br><br>
+
+            <label for="singleWomen">看見的單身女子:</label>
+            <input type="number" id="singleWomen" name="singleWomen" min="0" required><br><br>
+
+            <button type="submit">按下開始計算機率</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <div class="footer">Author: 用chatGPT不寫code的</div>
+    <script>
+        document.getElementById('probabilityForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const couples = parseInt(document.getElementById('couples').value);
+            const singleMen = parseInt(document.getElementById('singleMen').value);
+            const singleWomen = parseInt(document.getElementById('singleWomen').value);
+
+            const totalPeople = couples * 2 + singleMen + singleWomen;
+            const coupleProbability = (couples * 2) / totalPeople;
+
+            document.getElementById('result').innerText = `The probability of forming a couple is: ${coupleProbability.toFixed(2)}`;
+            document.getElementById('result').classList.add('res');
+
+        });
+    </script>
+</body>
+</html>
