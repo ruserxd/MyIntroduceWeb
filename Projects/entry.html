@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>table_Practice</title>
+</head>
+<body>
+<main>
+    <form id="entryForm" action="#" method="post">
+    <p><strong><span class="require"></span></strong></p>
+    <table>
+        <caption>朋友資料</caption>
+        <tr>
+            <th>人名</th>
+            <td><input type="text" name="friend-name" autofocus></td>
+        </tr>
+        <tr>
+            <th>年齡</th>
+            <td>
+             <select name="age" required>
+                <option value="" selected>請選擇</option>
+                <option value="0">未滿1歲</option>
+                <option value="1">1~5歲</option>
+                <option value="2">6~10歲</option>
+                <option value="3">11~15歲</option>
+                <option value="4">16~20歲</option>
+                <option value="5">不明</option>
+             </select>
+            </td>
+        </tr>
+        <tr>
+            <th>性別</th>
+            <td>
+                <input type="radio" name="sex" id="male" value="男生" checked>
+                <label for="male">男生</label>
+                <input type="radio" name="sex" id="female" value="女生">
+                <label for="female">女生</label>
+                <input type="radio" name="sex" id="bothSex" value="不方便">
+                <label for="bothSex">不方便</label>
+            </td>
+        </tr>
+        <tr>
+            <th>最愛的食物</th>
+            <td>
+                <input type="checkbox" name="favorite" value="珍珠奶茶">珍珠奶茶
+                <input type="checkbox" name="favorite" value="雞排">雞排
+                <input type="checkbox" name="favorite" value="咖哩">咖哩
+                <input type="checkbox" name="favorite" value="拉麵">拉麵
+                <input type="checkbox" name="favorite" value="漢堡">漢堡
+                <input type="checkbox" name="favorite" value="其他">其他
+            </td>
+        </tr>
+        <tr>
+            <th>照片</th>
+            <td><input type="file" name="photo"></td>
+        </tr>
+    </table>
+    <table>
+        <caption>版主資料</caption>
+        <tr>
+            <th>版主名</th>
+            <td>
+                <input type="text" name="name" required placeholder="帥哥阿偉">
+                <small>可用暱稱</small>
+            </td>
+        </tr>
+        <tr>
+            <th>E-mail</th>
+            <td>
+                <input type="email" name="email" required placeholder="INFO@gmail.com">
+                <small>請輸入半形文字</small>
+            </td>
+        </tr>
+        <tr>
+            <th>留言</th>
+            <td><textarea name="comment" rows="4" cols="40"></textarea></td>
+        </tr>
+    </table>
+        <div>
+        <input type="reset" value="清除重填">
+        <input type="submit" value="送出">
+        </div>
+    </form>
+</main>
+</body>
+</html>
