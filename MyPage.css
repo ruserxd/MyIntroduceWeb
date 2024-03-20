@@ -80,6 +80,10 @@ a:hover {
 h1,nav,footer {
     text-align: center;
 }
+.tire {
+    width: 20%;
+    height: 80%;
+}
 .menu li {
     list-style-type: none;
     display: inline-block;
